@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+}
+@font-face {
+    font-family: 'OnestBold';
+    src: url('./assets/fonts/Onest-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'OnestRegular';
+    src: url('./assets/fonts/Onest-Regular.woff2') format('woff2');
+}

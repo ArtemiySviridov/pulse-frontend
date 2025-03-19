@@ -1,0 +1,145 @@
+.main-container {
+  background-color: #f5f5f5;
+  padding: 0 20px 0 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.profile-info {
+  display: flex;
+  flex-direction: column;
+
+  .point-header {
+    margin-top: 30px;
+    font-size: 24px;
+    font-family: OnestBold, serif;
+    text-align: center;
+  }
+
+  .point-photo {
+    margin-top: 20px;
+    width: 100%;
+    height: 170px;
+    background-color: lightgray;
+    border-radius: 30px;
+  }
+
+  .point-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__tag {
+      color: white;
+      margin-top: 20px;
+      background-color: #6e61ff;
+      font-family: OnestRegular, serif;
+      font-size: 20px;
+      padding: 20px 20px 20px 20px;
+      border-radius: 20px;
+      width: 100%;
+    }
+  }
+
+  .point-donates {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__header {
+      font-family: OnestBold, serif;
+      font-size: 24px;
+    }
+
+    &__target {
+      margin-top: 10px;
+      font-family: OnestRegular, serif;
+      font-size: 17px;
+    }
+
+    &__progress-bar {
+      margin-top: 20px;
+      width: 100%;
+      height: 65px;
+      background: rgba(138, 127, 255, 0.5);
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+
+      .point-donates__progress__fill {
+        width: 75%;
+        height: 100%;
+        background: #6e00ff;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .progress-text {
+          position: absolute;
+          right: 21%;
+          color: white;
+          font-size: 18px;
+          font-family: OnestBold, serif;
+        }
+      }
+    }
+
+    &__button {
+      margin-top: 20px;
+      padding: 10px 20px 10px 20px;
+      color: white;
+      background-color: #6e61ff;
+      font-family: OnestRegular, serif;
+      border-radius: 13px;
+      font-size: 16px;
+    }
+  }
+
+  .point-same {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__header {
+      font-family: OnestBold, serif;
+      font-size: 24px;
+    }
+  }
+}
+
+.footer-point {
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 33px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+
+  &__head {
+    font-family: OnestBold, serif;
+    font-size: 30px;
+  }
+
+  &__contacts {
+    font-family: OnestRegular, serif;
+    font-size: 17px;
+  }
+
+  &__tg {
+    font-family: OnestRegular, serif;
+    font-size: 17px;
+  }
+}
+
+.after-footer {
+  font-family: OnestRegular, serif;
+  font-size: 12px;
+  color: #7a818d;
+  padding: 10px 0 10px 20px;
+}

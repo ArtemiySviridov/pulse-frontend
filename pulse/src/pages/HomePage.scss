@@ -1,0 +1,347 @@
+.main-container {
+  background-color: #f5f5f5;
+  padding: 0 20px 0 20px;
+}
+
+.first-slide {
+  margin-top: 30px;
+  flex-grow: 1;
+  color: white;
+  background-color: #6e61ff;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 40px;
+
+  &__name {
+    font-family: OnestBold, serif;
+    font-size: 30px;
+  }
+
+  &__slogan {
+    margin-top: 20px;
+    font-family: OnestBold, serif;
+    font-size: 17px;
+  }
+}
+
+.second-slide {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+
+  &__points {
+    margin-top: 50px;
+    flex-grow: 1;
+    justify-items: center;
+
+    &__head {
+      padding: 0 0 20px 0;
+      font-family: OnestBold, serif;
+      font-size: 33px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    &__photo {
+      width: 250px;
+      height: 250px;
+      background-color: lightgray;
+      border-radius: 40px;
+    }
+
+    &__info {
+      padding: 0 5px 0 5px;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 21px;
+      font-family: OnestRegular, serif;
+    }
+
+    &__more-button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #6e61ff;
+      border-radius: 13px;
+      color: white;
+      font-family: OnestRegular, serif;
+      font-size: 15px;
+      border: none;
+      padding: 15px 30px 15px 30px;
+    }
+
+    &__list {
+      margin-top: 50px;
+      &__item {
+        border-radius: 40px;
+        background-color: #6e61ff;
+        color: white;
+        padding: 25px;
+        .item-logo {
+          justify-self: center;
+          width: 220px;
+          height: 220px;
+          background-color: lightgray;
+          border-radius: 40px;
+        }
+        .item-header {
+          margin-top: 20px;
+          font-family: OnestBold, serif;
+          font-size: 25px;
+        }
+        .item-info {
+          margin-top: 20px;
+          font-family: OnestRegular, serif;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+.third-slide {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+
+  &__events {
+    margin-top: 50px;
+    flex-grow: 1;
+    justify-items: center;
+
+    &__head {
+      padding: 0 0 20px 0;
+      font-family: OnestBold, serif;
+      font-size: 33px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    &__photo {
+      width: 250px;
+      height: 250px;
+      background-color: lightgray;
+      border-radius: 40px;
+    }
+
+    &__info {
+      padding: 0 8px 0 8px;
+      text-align: center;
+      font-size: 21px;
+      margin-top: 15px;
+      font-family: OnestRegular, serif;
+    }
+
+    &__more-events-button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #6e61ff;
+      border-radius: 13px;
+      color: white;
+      font-family: OnestRegular, serif;
+      font-size: 15px;
+      border: none;
+      padding: 15px 30px 15px 30px;
+    }
+
+    &__list {
+      margin-top: 50px;
+      &__item {
+        border-radius: 40px;
+        background-color: white;
+        color: black;
+        padding: 25px;
+        .item-day {
+          position: absolute;
+          z-index: 1000;
+          display: flex;
+          flex-direction: column;
+          padding: 5px 8px 5px 8px;
+          border-radius: 13px;
+          border: 1px solid lightgray;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          right: 70%;
+          &__day {
+            font-size: 30px;
+            font-family: OnestBold, serif;
+            color: #6e61ff;
+          }
+          &__day-name {
+            font-size: 13px;
+            font-family: OnestRegular, serif;
+            color: #7a818d;
+          }
+        }
+        .item-logo {
+          margin-top: 15px;
+          justify-self: center;
+          width: 240px;
+          height: 240px;
+          background-color: lightgray;
+          border-radius: 40px;
+        }
+        .item-header {
+          margin-top: 20px;
+          font-family: OnestBold, serif;
+          font-size: 25px;
+          padding: 0 15px 0 15px;
+        }
+        .item-info {
+          margin-top: 20px;
+          font-family: OnestRegular, serif;
+          font-size: 17px;
+          padding: 0 15px 0 15px;
+        }
+        .item-footer {
+          padding: 0 6px 0 6px;
+          margin-top: 20px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          &__bpm {
+            font-family: OnestBold, serif;
+            font-size: 24px;
+            color: #1bca5e;
+          }
+          &__button {
+            background-color: #6e61ff;
+            border-radius: 13px;
+            color: white;
+            font-family: OnestRegular, serif;
+            font-size: 15px;
+            border: none;
+            padding: 15px 30px 15px 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.forth-slide {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+
+  &__pulses {
+    margin-top: 50px;
+    flex-grow: 1;
+    justify-items: center;
+
+    &__head {
+      padding: 0 0 20px 0;
+      font-family: OnestBold, serif;
+      font-size: 33px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    &__photo {
+      width: 250px;
+      height: 250px;
+      background-color: lightgray;
+      border-radius: 40px;
+    }
+
+    &__info {
+      padding: 0 8px 0 8px;
+      text-align: center;
+      font-size: 21px;
+      margin-top: 15px;
+      font-family: OnestRegular, serif;
+    }
+
+    &__more-events-button {
+      margin-top: 20px;
+      background-color: #6e61ff;
+      border-radius: 13px;
+      color: white;
+      font-family: OnestRegular, serif;
+      font-size: 15px;
+      border: none;
+      padding: 15px 30px 15px 30px;
+    }
+
+    &__list {
+      margin-top: 50px;
+      &__item {
+        border-radius: 40px;
+        background-color: white;
+        color: black;
+        padding: 25px;
+        .item-logo {
+          margin-top: 15px;
+          justify-self: center;
+          width: 240px;
+          height: 240px;
+          background-color: lightgray;
+          border-radius: 40px;
+        }
+        .item-header {
+          margin-top: 20px;
+          font-family: OnestBold, serif;
+          font-size: 25px;
+          padding: 0 15px 0 15px;
+        }
+        .item-pulse-footer {
+          padding: 0 6px 0 6px;
+          margin-top: 20px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          &__bpm {
+            font-family: OnestBold, serif;
+            font-size: 24px;
+            color: #1bca5e;
+          }
+          &__button {
+            background-color: #6e61ff;
+            border-radius: 13px;
+            color: white;
+            font-family: OnestRegular, serif;
+            font-size: 15px;
+            border: none;
+            padding: 15px 30px 15px 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 33px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+
+  &__head {
+    font-family: OnestBold, serif;
+    font-size: 30px;
+  }
+
+  &__contacts {
+    font-family: OnestRegular, serif;
+    font-size: 17px;
+  }
+
+  &__tg {
+    font-family: OnestRegular, serif;
+    font-size: 17px;
+  }
+}
+
+.after-footer {
+  font-family: OnestRegular, serif;
+  font-size: 12px;
+  color: #7a818d;
+  padding: 10px 0 10px 20px;
+}
