@@ -1,4 +1,6 @@
 import './PointPage.scss'
+import point from '../assets/images/point.png'
+import same from '../assets/images/same.png'
 
 const PointsPage = () => {
 	return (
@@ -8,9 +10,7 @@ const PointsPage = () => {
 					<div className="point-header">
 						ул. Советская 29
 					</div>
-					<div className="point-photo">
-
-					</div>
+					<img src={point} className="point-photo" />
 					<div className="point-info">
 						<div className="point-info__tag">
 							Описание
@@ -37,6 +37,21 @@ const PointsPage = () => {
 					<div className="point-same">
 						<div className="point-same__header">
 							Похожие точки
+						</div>
+						<div className="point-same__list">
+							<div className="point-same__item">
+								<img src={same} className="item-photo" />
+								<div className="item-name">
+									ул. Советская 29
+								</div>
+							</div>
+
+							<div className="point-same__item">
+								<img src={same} className="item-photo"/>
+								<div className="item-name">
+									ул. Советская 29
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

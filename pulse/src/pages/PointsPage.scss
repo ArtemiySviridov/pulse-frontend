@@ -12,7 +12,6 @@
   font-family: OnestBold, serif;
   text-align: center;
 }
-
 .points-list {
   gap: 15px;
   margin-top: 20px;
@@ -34,6 +33,7 @@
         width: 90px;
         height: 90px;
         background-color: lightgray;
+        object-fit: cover;
       }
       &__info-header {
         flex-grow: 1;
@@ -42,6 +42,18 @@
         justify-content: center; /* Центрируем по горизонтали */
         font-family: OnestBold, serif;
         font-size: 20px;
+      }
+      &__info-header-link {
+        text-decoration: none;
+        background-color: #ec7979;
+        flex-grow: 1;
+        display: flex;
+        align-items: center; /* Центрируем по вертикали */
+        justify-content: center; /* Центрируем по горизонтали */
+        font-family: OnestBold, serif;
+        font-size: 20px;
+        margin: 20px;
+        border-radius: 10px;
       }
     }
 

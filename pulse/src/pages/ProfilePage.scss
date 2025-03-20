@@ -1,0 +1,147 @@
+.main-container {
+  background-color: #f5f5f5;
+  padding: 0 20px 0 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__photo {
+    width: 250px;
+    height: 250px;
+    background-color: lightgray;
+    margin-top: 30px;
+    border-radius: 40px;
+  }
+
+  &__name {
+    margin-top: 20px;
+    font-family: OnestBold, serif;
+    font-size: 24px;
+  }
+
+  &__info-rate {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+
+    .profile-container__points {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+
+      .points-text {
+        font-family: OnestRegular, serif;
+        font-size: 24px;
+      }
+
+      .points-count {
+        font-family: OnestBold, serif;
+        color: #1BCA5E;
+        font-size: 28px;
+      }
+    }
+
+    .profile-container__rating {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .rating-text {
+        font-family: OnestRegular, serif;
+        font-size: 24px;
+      }
+
+      .rating-count {
+        font-family: OnestBold, serif;
+        font-size: 28px;
+        color: #6e61ff;
+      }
+    }
+  }
+
+  &__info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #6e61ff;
+    color: white;
+    gap: 10px;
+    border-radius: 40px;
+    padding: 20px;
+
+    .info-header {
+      font-family: OnestBold, serif;
+      font-size: 24px;
+    }
+
+    .info-text {
+      font-family: OnestRegular, serif;
+      font-size: 16px;
+    }
+  }
+
+  &__achievements {
+    margin-top: 30px;
+    .achievements-header {
+      font-family: OnestBold, serif;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .achievements-list {
+      margin-top: 20px;
+      display: flex;
+      font-size: 16px;
+      padding: 10px;
+      background-color: #6e61ff;
+      border-radius: 30px;
+      flex-direction: row;
+      gap: 20px;
+
+      &__item {
+        border-radius: 30px;
+        background-color: #6e00ff;
+        display: flex;
+        padding: 15px;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+        gap: 10px;
+        color: white;
+
+        .item-photo {
+          width: 60px;
+          height: 60px;
+          background-color: lightgray;
+          border-radius: 50%;
+        }
+
+        .item-name {
+          text-align: center;
+          font-family: OnestBold, serif;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  &__button {
+    margin-top: 40px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-size: 20px;
+    font-family: OnestRegular, serif;
+    background-color: #6e61ff;
+    border-radius: 15px;
+    border: none;
+  }
+}

@@ -1,40 +1,34 @@
-import { Outlet } from 'react-router-dom';
+import {Link, Outlet} from 'react-router-dom';
 import './MainLayout.scss';
-import { useRef } from "react";
+import burgerButton from '../assets/images/burger-button.png'
+import { useState } from 'react';
 
 export const MainLayout = () => {
-	const dialogRef = useRef(null);
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-	const openMenu = () => {
-		dialogRef.current.showModal(); // Открывает модальное окно
+	const toggleMenu = () => {
+		setIsMenuOpen(!isMenuOpen);
 	};
 
 	const closeMenu = () => {
-		dialogRef.current.close(); // Закрывает модальное окно
+		setIsMenuOpen(false);
 	};
+
 	return (
 		<div className="main-layout">
 			<main>
 				<div className="header">
 					<div className="header-container">
-						<div className="header-logo">
-							Пульс
-						</div>
+						<Link to='/' className="logo-link">
+							<div className="header-logo">
+								Пульс
+							</div>
+						</Link>
 						<div className="header-nav">
 							<div className="dropdown">
-								<button onClick={openMenu} className="menu-button">
-									Меню
+								<button className="menu-button" onClick={toggleMenu}>
+									<img src={burgerButton} alt="menu-button" />
 								</button>
-								<dialog ref={dialogRef} className="menu-dialog">
-									<div className="menu-content">
-										<button onClick={closeMenu} className="close-button">✖</button>
-										<ul>
-											<li><a href="#">Профиль</a></li>
-											<li><a href="#">Настройки</a></li>
-											<li><a href="#">Выход</a></li>
-										</ul>
-									</div>
-								</dialog>
 							</div>
 						</div>
 					</div>
@@ -42,6 +36,25 @@ export const MainLayout = () => {
 				<div className="outlet-container">
 					<Outlet/>
 				</div>
+				{isMenuOpen && (
+					<div className="modal-overlay" onClick={closeMenu}>
+						<div className="modal" onClick={(e) => e.stopPropagation()}>
+							<button className="close-button" onClick={closeMenu}>×</button>
+							<nav className="modal-menu">
+								<ul>
+									<li><Link className="link" to="/profile" onClick={closeMenu}>Личный кабинет</Link></li>
+									<li><Link className="link" to="/points" onClick={closeMenu}>Точки интереса</Link></li>
+									<li>Мероприятия</li>
+									<li>Блог</li>
+									<li>Магазин баллов</li>
+									<li>О нас</li>
+									<li>Контакты</li>
+									<li>Зафиксировать активность</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				)}
 			</main>
 		</div>
 	);

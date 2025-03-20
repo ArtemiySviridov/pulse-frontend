@@ -1,5 +1,8 @@
 import './PointsPage.scss'
 import {Link} from "react-router-dom";
+import lagerSad from '../assets/images/lager-sad.png'
+import naberezh from '../assets/images/naberezh.png'
+import oldHouse from '../assets/images/old-house.png'
 
 const PointsPage = () => {
 	return (
@@ -12,10 +15,8 @@ const PointsPage = () => {
 					<Link to='/point'>
 						<div className="points-item">
 							<div className="points-item-container">
-								<div className="points-item-container__img">
-
-								</div>
-								<div className="points-item-container__info-header">
+								<img src={oldHouse} className="points-item-container__img" />
+								<div className="points-item-container__info-header-link">
 									ул. Советская 29
 								</div>
 							</div>
@@ -26,9 +27,7 @@ const PointsPage = () => {
 					</Link>
 					<div className="points-item">
 						<div className="points-item-container">
-							<div className="points-item-container__img">
-
-							</div>
+							<img src={lagerSad} className="points-item-container__img" />
 							<div className="points-item-container__info-header">
 								Лагерный сад
 							</div>
@@ -40,9 +39,7 @@ const PointsPage = () => {
 
 					<div className="points-item">
 						<div className="points-item-container">
-							<div className="points-item-container__img">
-
-							</div>
+							<img src={naberezh} className="points-item-container__img" />
 							<div className="points-item-container__info-header">
 								Набережная Томи
 							</div>
@@ -54,9 +51,7 @@ const PointsPage = () => {
 
 					<div className="points-item">
 						<div className="points-item-container">
-							<div className="points-item-container__img">
-
-							</div>
+							<img src={lagerSad} alt="lagersad" className="points-item-container__img" />
 							<div className="points-item-container__info-header">
 								Лагерный сад
 							</div>

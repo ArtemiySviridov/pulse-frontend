@@ -4,7 +4,6 @@ import HomePage from '../../pages/HomePage';
 import PointPage from '../../pages/PointPage';
 import PointsPage from '../../pages/PointsPage';
 import ProfilePage from '../../pages/ProfilePage';
-// import ShopPage from '../../pages/ShopPage';
 
 const router = createBrowserRouter([
 	{
@@ -22,18 +21,6 @@ const router = createBrowserRouter([
 				path: '/points',
 				element: <PointsPage />,
 			},
-			// {
-			// 	path: '/events',
-			// 	element: <EventsPage />,
-			// },
-			// {
-			// 	path: '/event',
-			// 	element: <EventPage />,
-			// },
-			// {
-			// 	path: '/shop',
-			// 	element: <ShopPage />,
-			// },
 			{
 				path: '/profile',
 				element: <ProfilePage />,

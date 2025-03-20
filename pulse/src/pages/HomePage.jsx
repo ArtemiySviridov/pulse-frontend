@@ -1,11 +1,16 @@
 import './HomePage.scss';
 import { Link } from "react-router-dom";
+import homeMain from '../assets/images/home-main.png';
+import pointOfInterest from '../assets/images/point-of-interest.png';
+import peopleMain from '../assets/images/people.png';
+import tomskSad from '../assets/images/tomsk-sad.png';
 
 const HomePage = () => {
 	return (
 		<div className="main-layout">
 			<main className="main-container">
 				<div className="first-slide">
+					<img src={homeMain} className="first-slide__img" alt="img" />
 					<div className="first-slide__name">Волонтерство – это не только дать, но и получить</div>
 					<div className="first-slide__slogan">
 						<div>
@@ -14,21 +19,21 @@ const HomePage = () => {
 						</div>
 					</div>
 				</div>
+				<div className="attention">
+					Кликабельные элементы окрашены в красный цвет
+				</div>
 				<div className="second-slide">
 					<div className="second-slide__points">
 						<div className="second-slide__points__head">
 							Точка интереса
 						</div>
-						<div className="second-slide__points__photo">
-						</div>
+						<img src={pointOfInterest} alt="poi" className="second-slide__points__photo" />
 						<div className="second-slide__points__info">
 							Точка интереса – место о котором ты мог не знать, но оно имеет шанс стать родным
 						</div>
 						<div className="second-slide__points__list">
 							<div className="second-slide__points__list__item">
-								<div className="item-logo">
-
-								</div>
+								<img src={tomskSad} alt className="item-logo" />
 								<div className="item-header">
 									Расширение
 									возможностей
@@ -43,9 +48,9 @@ const HomePage = () => {
 								</div>
 							</div>
 						</div>
-						<Link to="/points" className="second-slide__points__more-button">
+						<button className="second-slide__points__more-button">
 							Увидеть все точки интереса
-						</Link>
+						</button>
 					</div>
 				</div>
 				<div className="third-slide">
@@ -66,9 +71,7 @@ const HomePage = () => {
 										авг
 									</div>
 								</div>
-								<div className="item-logo">
-
-								</div>
+								<img src={peopleMain} alt="people" className="item-logo" />
 								<div className="item-header">
 									Посадка деревьев
 								</div>
@@ -85,9 +88,9 @@ const HomePage = () => {
 								</div>
 							</div>
 						</div>
-						<Link to="/points" className="third-slide__events__more-events-button">
+						<button className="third-slide__events__more-events-button">
 							Увидеть все мероприятия
-						</Link>
+						</button>
 					</div>
 				</div>
 				<div className="forth-slide">
@@ -101,9 +104,7 @@ const HomePage = () => {
 						</div>
 						<div className="forth-slide__pulses__list">
 							<div className="forth-slide__pulses__list__item">
-								<div className="item-logo">
-
-								</div>
+								<img src={peopleMain} alt="people" className="item-logo"/>
 								<div className="item-header">
 									Купон на шаурму БЕЗУМНО
 								</div>
