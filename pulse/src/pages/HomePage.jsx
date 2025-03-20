@@ -92,7 +92,7 @@ const HomePage = () => {
 							Пульсы
 						</div>
 						<div className="forth-slide__pulses__info">
-							Пульсы – это внутренняя валюта, которую ты можешь обменять на различные награда, которые ты выберешь сам.							бабушки
+							Пульсы – это внутренняя валюта, которую ты можешь обменять на различные награда, которые ты выберешь сам.
 						</div>
 						<div className="forth-slide__pulses__list">
 							<div className="forth-slide__pulses__list__item">
