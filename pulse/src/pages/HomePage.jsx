@@ -11,11 +11,10 @@ const HomePage = () => {
 			<main className="main-container">
 				<div className="first-slide">
 					<img src={homeMain} className="first-slide__img" alt="img" />
-					<div className="first-slide__name">Волонтерство – это не только дать, но и получить</div>
+					<div className="first-slide__name">Волонтерство – это не только помощь, это будущее!</div>
 					<div className="first-slide__slogan">
 						<div>
-							Пульс — уникальная платформа для молодежи, направленная на развитие социально значимых качеств и улучшения
-							окружающей среды!
+							Пульс – уникальная платформа для жителей города, направленная на развитие социально значимых качеств и улучшения окружающей среды!
 						</div>
 					</div>
 				</div>
@@ -39,18 +38,13 @@ const HomePage = () => {
 									возможностей
 								</div>
 								<div className="item-info">
-									GoUP предлагает календарь
-									мероприятий, которые помогут
-									студентам и выпускникам
-									университета обогатить свой
-									опыт и активно участвовать в
-									различных видах
+									Пульс предлагает календарь мероприятий, которые помогут жителям города обогатить свой опыт и активно участвовать в различных видах социальной активности.
 								</div>
 							</div>
 						</div>
-						<button className="second-slide__points__more-button">
+						<Link to='/points' className="second-slide__points__more-button">
 							Увидеть все точки интереса
-						</button>
+						</Link>
 					</div>
 				</div>
 				<div className="third-slide">
@@ -59,8 +53,7 @@ const HomePage = () => {
 							Мероприятия
 						</div>
 						<div className="third-slide__events__info">
-							Мероприятия – то, где ты можешь познакомиться с новыми людьми, да я ебу че ты там еще можешь
-						</div>
+							Мероприятия – это то, где ты можешь найти новых знакомых, прокачать личностные качества и весело провести время с пользой для окружающих.						</div>
 						<div className="third-slide__events__list">
 							<div className="third-slide__events__list__item">
 								<div className="item-day">
@@ -96,11 +89,10 @@ const HomePage = () => {
 				<div className="forth-slide">
 					<div className="forth-slide__pulses">
 						<div className="forth-slide__pulses__head">
-							Пульсики
+							Пульсы
 						</div>
 						<div className="forth-slide__pulses__info">
-							Пульсики – ты не останешься без награды, брат, я таво все, купи шавуху БЕЗЗУБО за баллы с пульсометра
-							бабушки
+							Пульсы – это внутренняя валюта, которую ты можешь обменять на различные награда, которые ты выберешь сам.							бабушки
 						</div>
 						<div className="forth-slide__pulses__list">
 							<div className="forth-slide__pulses__list__item">

@@ -30,6 +30,8 @@
 
 .header-nav {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 15px; /* Расстояние между кнопками */
 }
 
@@ -40,6 +42,15 @@
   border-radius: 5px;
   position: relative;
   background-color: #ec7979;
+  display: flex; /* Включаем flexbox */
+  align-items: center; /* Центрируем по вертикали */
+  justify-content: center; /* Центрируем по горизонтали */
+  padding: 4px;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .modal-overlay {
@@ -82,14 +93,11 @@
   background-color: #F7F8FC;
   border-radius: 20px;
   border: 2px solid #6e61ff;
-
-  .link {
-    background-color: #ec7979;
-    border-radius: 30px;
-    padding: 10px;
-  }
 }
-
+.modal-menu li:nth-child(1),
+.modal-menu li:nth-child(2) {
+  background-color: #ec7979; /* Красный фон для первых двух элементов */
+}
 .modal-menu a {
   text-decoration: none;
   color: black;

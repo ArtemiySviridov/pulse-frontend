@@ -1,7 +1,8 @@
 import {Link, Outlet} from 'react-router-dom';
 import './MainLayout.scss';
 import burgerButton from '../assets/images/burger-button.png'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export const MainLayout = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,6 +15,20 @@ export const MainLayout = () => {
 		setIsMenuOpen(false);
 	};
 
+	useEffect(() => {
+		if (isMenuOpen) {
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = 'auto';
+		}
+	}, [isMenuOpen]);
+
+	const location = useLocation();
+
+	useEffect(() => {
+		// Сбрасываем прокрутку при изменении маршрута
+		window.scrollTo(0, 0);
+	}, [location]);
 	return (
 		<div className="main-layout">
 			<main>
