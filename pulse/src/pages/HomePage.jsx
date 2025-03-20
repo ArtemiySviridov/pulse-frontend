@@ -28,7 +28,7 @@ const HomePage = () => {
 						</div>
 						<img src={pointOfInterest} alt="poi" className="second-slide__points__photo" />
 						<div className="second-slide__points__info">
-							Точка интереса – место о котором ты мог не знать, но оно имеет шанс стать родным
+							Точка интереса – место, о котором ты мог не знать, но оно имеет шанс стать родным
 						</div>
 						<div className="second-slide__points__list">
 							<div className="second-slide__points__list__item">
